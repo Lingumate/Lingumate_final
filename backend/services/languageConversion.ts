@@ -21,7 +21,7 @@ export class LanguageConversionService {
   private async speechToText(audioBuffer: Buffer, language?: string): Promise<string> {
     try {
       const transcription = await openai.audio.transcriptions.create({
-        file: new Blob([audioBuffer], { type: 'audio/wav' }) as any,
+        file: new Blob([new Uint8Array(audioBuffer)], { type: 'audio/wav' }) as any,
         model: 'whisper-1',
         language: language || 'en',
       });

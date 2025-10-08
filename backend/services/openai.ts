@@ -50,7 +50,7 @@ export class OpenAIService {
       }
 
       // Create a proper file object for OpenAI
-      const file = new File([fileBuffer], 'audio.webm', { type: 'audio/webm' });
+      const file = new File([new Uint8Array(fileBuffer)], 'audio.webm', { type: 'audio/webm' });
 
       const transcription = await openai.audio.transcriptions.create({
         file: file as any,
