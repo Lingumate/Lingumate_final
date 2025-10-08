@@ -556,7 +556,7 @@ export default function ConversationInterface({ conversationId }: ConversationIn
                   className="items-center"
                   language="auto"
                   languageLabel="Auto-detect"
-                  author="auto"
+                  author="user"
                 />
               )}
             
