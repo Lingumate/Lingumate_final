@@ -19,7 +19,7 @@ import {
   FileAudio,
   NotebookPen
 } from 'lucide-react';
-import { apiRequest } from '@/lib/utils';
+import { apiRequest } from '@/lib/queryClient';
 
 interface SummaryItem {
   id: string;
