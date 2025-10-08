@@ -41,7 +41,9 @@
     "dist",
     "**/*.test.ts",
     "**/*.spec.ts",
-    "vite.ts"
+    "vite.ts",
+    "drizzle.config.ts",
+    "replitAuth.ts"
   ],
   "ts-node": {
     "esm": true
